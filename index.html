@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nest Secure - Beyond CCTV</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Nest Secure</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="shop/" class="nav-link">Shop</a></li>
+        <li><a href="cctv-wizard.html" class="nav-link">CCTV Wizard</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="main-content">
+    <!-- Hero Slideshow -->
+    <div class="hero-slideshow">
+      <div class="hero-slide active" style="background-image: url('images/hero-bg-1.jpg');">
+        <div class="slide-content active">
+          <div class="slide-badge">Exclusive Deal</div>
+          <h1>Nest Secure – Beyond CCTV</h1>
+          <p>Your trusted partner for comprehensive security, IT, and networking solutions. We don't just install cameras – we build complete security ecosystems that protect what matters most.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+            <a href="shop/" class="btn btn-secondary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-slide" style="background-image: url('images/hero-bg-2.jpg');">
+        <div class="slide-content">
+          <div class="slide-badge">Special Offer</div>
+          <h1>50% Off CCTV Installation</h1>
+          <p>Limited time offer! Get professional CCTV installation at half price. Includes free consultation, installation, and 1-year warranty. Secure your property today!</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary">Claim Offer</a>
+            <a href="services.html" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-slide" style="background-image: url('images/hero-bg-3.jpg');">
+        <div class="slide-content">
+          <div class="slide-badge">New Service</div>
+          <h1>Smart Home Security</h1>
+          <p>Transform your home with our latest smart security solutions. AI-powered cameras, mobile control, and 24/7 monitoring. Experience the future of home security.</p>
+          <div class="cta-buttons">
+            <a href="cctv-wizard.html" class="btn btn-primary">Build Package</a>
+            <a href="services.html" class="btn btn-secondary">View Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slideshow Controls -->
+    <div class="slideshow-controls">
+      <button class="slide-btn prev" onclick="changeSlide(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="slide-btn next" onclick="changeSlide(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    
+    <!-- Slideshow Navigation -->
+    <div class="slideshow-nav">
+      <div class="slide-dot active" onclick="currentSlide(1)"></div>
+      <div class="slide-dot" onclick="currentSlide(2)"></div>
+      <div class="slide-dot" onclick="currentSlide(3)"></div>
+    </div>
+  </section>
+
+  <!-- Quick Overview Cards -->
+  <section class="overview">
+    <div class="container">
+      <h2 class="section-title">Our Solutions</h2>
+      <div class="grid-3">
+        <div class="card slide-up">
+          <div class="card-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3>CCTV Solutions</h3>
+          <p>Advanced surveillance systems with AI-powered analytics, night vision, and mobile access. From basic home security to enterprise-grade monitoring solutions.</p>
+          <a href="services.html" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="card slide-up">
+          <div class="card-icon">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <h3>IT Support</h3>
+          <p>Comprehensive IT services including computer repair, network setup, cybersecurity, and 24/7 technical support for businesses and homes.</p>
+          <a href="services.html" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="card slide-up">
+          <div class="card-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3>Networking</h3>
+          <p>Professional networking solutions including WiFi installation, network security, VPN setup, and infrastructure optimization for seamless connectivity.</p>
+          <a href="services.html" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-choose-us">
+    <div class="container">
+      <h2 class="section-title">Why Choose Nest Secure?</h2>
+      <div class="grid-2">
+        <div class="features-content fade-in">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="feature-text">
+              <h4>10+ Years Experience</h4>
+              <p>Over a decade of expertise in security and IT solutions, serving thousands of satisfied customers across Pakistan.</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="feature-text">
+              <h4>24/7 Support</h4>
+              <p>Round-the-clock technical support and emergency services to ensure your security systems are always operational.</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Certified Technicians</h4>
+              <p>Our team consists of certified professionals with expertise in the latest security and networking technologies.</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Competitive Pricing</h4>
+              <p>Quality solutions at affordable prices with flexible payment plans and transparent pricing structures.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="features-image fade-in">
+          <img src="images/security-team.jpg" alt="Nest Secure Team">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-count="1000">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-count="5000">0</div>
+          <div class="stat-label">Cameras Installed</div>
+        </div>
+        
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-count="100">0</div>
+          <div class="stat-label">Businesses Secured</div>
+        </div>
+        
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-count="10">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="products-grid">
+        <div class="product-card slide-up">
+          <div class="product-badge">Bestseller</div>
+          <div class="product-image">
+            <img src="images/products/camera-1.jpg" alt="4K Security Camera">
+          </div>
+          <div class="product-details">
+            <h3>4K Ultra HD Security Camera</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>(24)</span>
+            </div>
+            <div class="product-price">$129.99</div>
+            <a href="shop/product.html" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+        
+        <div class="product-card slide-up">
+          <div class="product-image">
+            <img src="images/products/dvr-1.jpg" alt="8-Channel DVR">
+          </div>
+          <div class="product-details">
+            <h3>8-Channel DVR System</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(32)</span>
+            </div>
+            <div class="product-price">$199.99</div>
+            <a href="shop/product.html" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+        
+        <div class="product-card slide-up">
+          <div class="product-image">
+            <img src="images/products/monitor-1.jpg" alt="Security Monitor">
+          </div>
+          <div class="product-details">
+            <h3>19" Security Monitor</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(15)</span>
+            </div>
+            <div class="product-price">$89.99</div>
+            <a href="shop/product.html" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 3rem;">
+        <a href="shop/" class="btn btn-secondary">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Preview -->
+  <section class="testimonials-preview">
+    <div class="container">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-content">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Nest Secure transformed our office security with their professional CCTV installation. The team was knowledgeable and efficient, and we've had zero issues since installation."</p>
+            <div class="testimonial-author">
+              <img src="images/testimonials/client1.jpg" alt="Ahmed Khan">
+              <div class="author-info">
+                <h4>Ahmed Khan</h4>
+                <p>CEO, TechSolutions Pvt Ltd</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-content">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Excellent IT support services. They resolved our network issues quickly and provided great follow-up. Highly recommend their professional team."</p>
+            <div class="testimonial-author">
+              <img src="images/testimonials/client2.jpg" alt="Fatima Ahmed">
+              <div class="author-info">
+                <h4>Fatima Ahmed</h4>
+                <p>Office Manager, Creative Designs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 3rem;">
+        <a href="testimonials.html" class="btn btn-secondary">Read More Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="fade-in">Ready to Secure Your Property?</h2>
+        <p class="fade-in">Get a free consultation and quote for your security needs. Our experts will assess your requirements and recommend the perfect solution.</p>
+        <div class="cta-buttons fade-in">
+          <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
+          <a href="cctv-wizard.html" class="btn btn-secondary">Build Your Package</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>Nest Secure</h3>
+          <p>Security, IT & Networking – All in One Place</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shop/">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-phone"></i> 0329-2003842</p>
+          <p><i class="fas fa-envelope"></i> info@nestsecure.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Nest Secure. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
